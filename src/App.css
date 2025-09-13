@@ -6,6 +6,10 @@ h1, h2, h3, p, a {
   font-family: 'Montserrat', sans-serif;
 }
 
+header h1 {
+  font-size: 4rem;
+}
+
 .navbar .nav-link {
   font-size: 14px;
   color: #f8f9fa;
@@ -25,4 +29,28 @@ nav .navbar-toggler:focus {
 
 .footer-navigation li:hover{
   color: #212529;
+}
+
+@media only screen and (max-width: 1024px) {
+  #basic-navbar-nav {
+    background-color: #ffffffff;
+    padding: 10px 20px;
+    border-radius: 0.375rem;
+  }
+
+  .navbar .nav-link {
+    color: #212529;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header h1 {
+    font-size: 2rem;
+  }
 }

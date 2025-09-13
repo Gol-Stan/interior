@@ -1,0 +1,9 @@
+.home-page header {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/relaxing-armchair-front-window-with-small-table-interior-cozy-house-ai-generateive-generative-ai.jpg);
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+}
+

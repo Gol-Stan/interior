@@ -31,6 +31,10 @@ nav .navbar-toggler:focus {
   transform: scale(1.05);
 }
 
+.height-75 {
+  height: 75vh;
+}
+
 .footer-social-icons li:hover svg {
   fill: #212529;
 }

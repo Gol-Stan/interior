@@ -2,7 +2,7 @@ import React from "react";
 import './Works.css';
 import { Card } from 'react-bootstrap';
 import ArtCourseImg1 from '../../utils/images/int3.jpg';
-import ArtCourseImg2 from '../../utils/images/int3.jpg';
+import ArtCourseImg2 from '../../utils/images/int2.jpg';
 import ArtCourseImg3 from '../../utils/images/int1.jpg';
 import ArtCourseImg4 from '../../utils/images/home-1622401_1920.jpg';
 import FaqAccordion from "../../components/FaqAccordion/FaqAccordion";

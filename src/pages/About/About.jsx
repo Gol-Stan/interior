@@ -57,7 +57,7 @@ function About() {
                 <div className='container'>
                     <h2 className='text-center mb-5'>Our clients</h2>
                     <div className='row g-4'>
-                        {clients.map((client, index) => (
+                        {clients.map((client) => (
                             <div key={client.id} className='col-md-4'>
                                 <img src={client.img} className='img-fluid' alt='' />
                             </div>

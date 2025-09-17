@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 
+
 function Contact() {
     return (
         <div className="contact-page">
@@ -59,6 +60,17 @@ function Contact() {
                     </Button>
                 </Form>
             </div>
+
+            <div className='bg-dark text-light p-5'>
+                <div className='container'>
+                    <h2 className='text-center mb-5'>Our Location</h2>
+                    <div className='row g-4'>
+                        <div className='col-lg-4 d-flex flex-column align-items-center'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 }

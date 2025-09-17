@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Home from './pages/Home/Home';
 import Works from './pages/Works/Works';
 import About from './pages/About/About';
-import Contact from './pages/Contact/Contact';
+import Contacts from './pages/Contact/Contacts';
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
             <Nav className="mr-auto justify-content-end w-100">
               <Nav.Link href='/' className='text-uppercase'>Home</Nav.Link>
               <Nav.Link href='/works' className='text-uppercase'>Works</Nav.Link>
-              <Nav.Link href='/contact' className='text-uppercase'>Contact</Nav.Link>
+              <Nav.Link href='/contacts' className='text-uppercase'>Contacts</Nav.Link>
               <Nav.Link href='/about' className='text-uppercase'>About</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -48,7 +48,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/works' element={<Works />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/contacts' element={<Contacts />} />
         <Route path='/about' element={<About />} />
       </Routes>
 

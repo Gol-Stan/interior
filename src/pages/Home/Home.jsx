@@ -12,19 +12,19 @@ import Blog3Image from "../../utils/images/istockphoto-1837566278-612x612.webp";
 const  blogs = [
     {
         id:1,
-        img: [Blog1Image],
+        img: Blog1Image,
         title:"Blog 1",
         description:"Lorem ipsum dolor sit amet, consectetur",
     },
     {
         id:2,
-        img: [Blog2Image],
+        img: Blog2Image,
         title:"Blog 2",
         description:"Lorem ipsum dolor sit amet, consectetur",
     },
     {
         id:3,
-        img: [Blog3Image],
+        img: Blog3Image,
         title:"Blog 3",
         description:"Lorem ipsum dolor sit amet, consectetur",
     },
@@ -40,13 +40,13 @@ function Home() {
                     <h1 className='text-center fw-semibold'>Alcov Interior Design</h1>
                     <p>Lorem</p>
                     <div className='d-flex flex-column flex-sm-row align-items-center'>
-                        <Link to="/>works">
+                        <Link to="/works">
                             <button type="button" className="btn btn-danger btn-lg mx-0 mx-sm-2 my-2 my-sm-0">Our Works</button>
                         </Link>
-                        <Link to="/>contacts">
+                        <Link to="/contacts">
                             <button type="button" className="btn btn-outline-light btn-lg mx-0 mx-sm-2 my-2 my-sm-0">Our Contacts</button>
                         </Link>
-                        <Link to="/>about">
+                        <Link to="/about">
                             <button type="button" className="btn btn-danger btn-lg mx-0 mx-sm-2 my-2 my-sm-0">About Us</button>
                         </Link>
                     </div>

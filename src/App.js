@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Home from './pages/Home/Home';
 import Works from './pages/Works/Works';
+import Blog from './pages/Blog/Blog';
 import About from './pages/About/About';
 import Contacts from './pages/Contact/Contacts';
 
@@ -38,6 +39,7 @@ function App() {
             <Nav className="mr-auto justify-content-end w-100">
               <Nav.Link href='/' className='text-uppercase'>Home</Nav.Link>
               <Nav.Link href='/works' className='text-uppercase'>Works</Nav.Link>
+              <Nav.Link href='/blog' className='text-uppercase'>Blog</Nav.Link>
               <Nav.Link href='/contacts' className='text-uppercase'>Contacts</Nav.Link>
               <Nav.Link href='/about' className='text-uppercase'>About</Nav.Link>
             </Nav>
@@ -48,6 +50,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/works' element={<Works />} />
+        <Route path='/blog' element={<Blog />} />
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/about' element={<About />} />
       </Routes>
@@ -56,11 +59,11 @@ function App() {
         <div className="container my-5">
           <div className="row d-flex justify-content-between align-items-center">
             <div className='col-md-4'>
-              <Link to="/contact">
+              <Link to="/contacts">
                 <button type='button' className='btn btn-outline-danger btn-lg mb-5 mb-md-4'>Get in touch</button>
               </Link>
               <ul className='footer-social-icons list-unstyled d-flex justify-content-between'>
-                <Link to="/contact">
+                <Link to="/contacts">
                   <li>
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#dc3545"
                          className="bi bi-instagram" viewBox="0 0 16 16">
@@ -108,6 +111,9 @@ function App() {
                     <Link to="/works" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Works</li>
                     </Link>
+                    <Link to="/blog" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Blog</li>
+                    </Link>
                     <Link to="/contacts" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Contacts</li>
                     </Link>
@@ -119,7 +125,7 @@ function App() {
                 <div className='col-12 col-md-6 col-lg-7'>
                   <ul className='list-unstyled mb-0'>
                     <li>
-                      <p>Main Adress - Traian str. 7/2, Chisinau MD</p>
+                      <p>Main Address - Traian str. 7/2, Chisinau MD</p>
                     </li>
                     <li>
                       <p>Phone Number 373-000 00 000</p>

@@ -1,32 +1,23 @@
-# -------------------------
 # React / Node
-# -------------------------
-frontend/node_modules/
-frontend/build/
-frontend/.pnp
-frontend/.pnp.js
-frontend/.cache/
-frontend/.env
-frontend/.env.local
-frontend/.env.development.local
-frontend/.env.test.local
-frontend/.env.production.local
+Frontend/node_modules/
+Frontend/build/
+Frontend/.cache/
+Frontend/.env
+Frontend/.env.local
+Frontend/.env.development.local
+Frontend/.env.test.local
+Frontend/.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# -------------------------
 # Python / FastAPI
-# -------------------------
-backend/venv/
-backend/__pycache__/
-backend/*.pyc
-backend/.env
+Backend/venv/
+Backend/__pycache__/
+Backend/*.pyc
+Backend/.env
+Backend/app/__pycache__/
+Backend/app/routers/__pycache__/
+Backend/app/schemas/__pycache__/
 
-# -------------------------
 # Общие
-# -------------------------
 .DS_Store
 Thumbs.db
 *.log

@@ -7,6 +7,42 @@ import Button from 'react-bootstrap/Button';
 
 
 function Contacts() {
+
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: '',
+    });
+
+    const handleChange = (i) => {
+        setFormData({
+            ...formData,
+            [i.target.name]: i.target.value,
+        });
+    };
+
+    const handleSubmit = async (i) => {
+        i.preventDefault();
+        try {
+            const response = await fetch("http://localhost:8000/contacts/", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(formData),
+            });
+            if (response.ok) {
+                alert("Message sent successfully!");
+                setFormData({firsName: "", lastName: "", email: "", phone: "", message: "", });
+            } else {
+                alert("Error occured!");
+            }
+        } catch (error) {
+            alert("Server Error!");
+        }
+    };
+
+
     return (
         <div className="contact-page">
             <header className="height-75">

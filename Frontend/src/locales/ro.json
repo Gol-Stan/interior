@@ -56,5 +56,15 @@
     "message": "Mesajul dvs.",
     "submit": "Trimiteți",
     "location": "Locația noastră"
+  },
+  "works": {
+    "title": "Lucrările noastre",
+    "subtitle": "Exemplu de descriere pentru secțiunea lucrări. Aici puteți vedea proiecte și inspirații.",
+    "list": [
+      { "id": 1, "title": "Lucrarea 1", "description": "Descriere lucrare 1" },
+      { "id": 2, "title": "Lucrarea 2", "description": "Descriere lucrare 2" },
+      { "id": 3, "title": "Lucrarea 3", "description": "Descriere lucrare 3" },
+      { "id": 4, "title": "Lucrarea 4", "description": "Descriere lucrare 4" }
+    ]
   }
 }

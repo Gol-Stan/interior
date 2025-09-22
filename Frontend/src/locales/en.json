@@ -56,6 +56,16 @@
     "message": "Your Message",
     "submit": "Submit",
     "location": "Our Location"
+  },
+  "works": {
+    "title": "Our Works",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odio eos distinctio ducimus! Modi quaerat dolores illo accusamus maxime cupiditate culpa minus animi repellat autem!",
+    "list": [
+      { "id": 1, "title": "Art Course One", "description": "Lorem Lorem Lorem Lorem" },
+      { "id": 2, "title": "Art Course Two", "description": "Lpus Lupus Lupus" },
+      { "id": 3, "title": "Art Course Three", "description": "Dolce Dolce Dolce Dolce" },
+      { "id": 4, "title": "Art Course Four", "description": "Pie Pie Pie Pie" }
+    ]
   }
 
 }

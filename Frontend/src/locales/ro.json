@@ -66,5 +66,15 @@
       { "id": 3, "title": "Lucrarea 3", "description": "Descriere lucrare 3" },
       { "id": 4, "title": "Lucrarea 4", "description": "Descriere lucrare 4" }
     ]
+  },
+  "blogs": {
+    "blogTitle": "Blog",
+    "blogDescription": "Descriere",
+    "blogs": [
+      { "title": "Blog1", "description": "Descriere" },
+      { "title": "Blog2", "description": "Descriere" },
+      { "title": "Blog3", "description": "Descriere" },
+      { "title": "Blog4", "description": "Descriere" }
+    ]
   }
 }

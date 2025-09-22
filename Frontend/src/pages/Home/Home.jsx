@@ -64,11 +64,14 @@ function Home() {
                 <div className='container d-flex flex-column align-items-center'>
                     <h2 className='text-center text-capitalize mb-5'>{t("blog.latest")}</h2>
                     <div className='row g-4'>
-                        {blogs.map((blog) => (
+                        {blogs.map((blog, index) => (
                          <div key={blog.id} className='col-md-6 col-lg-4'>
                             <Link to='/blog' className='text-decoration-none'>
                                 <Card className="h-100 shadow scale-hover-effect">
-                                    <Card.Img variant='top' src={blog.img} />
+                                    <Card.Img
+                                        variant='top'
+                                        src={blogImages[index]}
+                                    />
                                     <Card.Body className='p-md-5'>
                                         <Card.Title>{blog.title}</Card.Title>
                                         <Card.Text>{blog.description}</Card.Text>

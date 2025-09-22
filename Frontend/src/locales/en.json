@@ -26,7 +26,7 @@
     "copyright": "copyright @ made by Stan"
   },
   "blog": {
-    "latest": "Latest on Blog",
+    "latest": "Latest Updates",
     "read_more": "Read More Blogs",
     "posts": [
       {
@@ -66,6 +66,15 @@
       { "id": 3, "title": "Art Course Three", "description": "Dolce Dolce Dolce Dolce" },
       { "id": 4, "title": "Art Course Four", "description": "Pie Pie Pie Pie" }
     ]
+  },
+  "blogs": {
+    "blogTitle": "Blog",
+    "blogDescription": "Lorem",
+    "blogs": [
+      { "title": "Blog1", "description": "Lorem" },
+      { "title": "Blog2", "description": "Lorem" },
+      { "title": "Blog3", "description": "Lorem" },
+      { "title": "Blog4", "description": "Lorem" }
+    ]
   }
-
 }

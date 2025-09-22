@@ -4,9 +4,10 @@ import Form from "react-bootstrap/Form";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
-
+import { useTranslation } from "react-i18next";
 
 function Contacts() {
+    const { t } = useTranslation();
 
     const [formData, setFormData] = useState({
         firstName: '',
@@ -18,9 +19,7 @@ function Contacts() {
 
     const handleChange = (i) => {
         setFormData({
-            ...formData,
-            [i.target.name]: i.target.value,
-        });
+            ...formData, [i.target.name]: i.target.value });
     };
 
     const handleSubmit = async (i) => {
@@ -32,13 +31,19 @@ function Contacts() {
                 body: JSON.stringify(formData),
             });
             if (response.ok) {
-                alert("Message sent successfully!");
-                setFormData({firsName: "", lastName: "", email: "", phone: "", message: "", });
+                alert(t("contact.succes", "Message sent successfully!"));
+                setFormData({
+                firstName: "",
+                lastName: "",
+                email: "",
+                phone: "",
+                message: "",
+                 });
             } else {
-                alert("Error occured!");
+                alert(t("contacts.error", "Error occurred!"));
             }
         } catch (error) {
-            alert("Server Error!");
+            alert(t("contacts.server_error", "Server Error!"));
         }
     };
 
@@ -47,59 +52,92 @@ function Contacts() {
         <div className="contact-page">
             <header className="height-75">
                 <div className='container h-100 d-flex flex-column align-items-center justify-content-center text-light'>
-                    <h1 className="text-center fw-semibold">Contacts</h1>
-                    <p className="text-center w-75 mb-5"> Lorem</p>
+                    <h1 className="text-center fw-semibold">{t("contacts.title")}</h1>
+                    <p className="text-center w-75 mb-5">{t("contacts.subtitle")}</p>
                 </div>
             </header>
 
             <div className='container my-5 d-flex justify-content-center'>
-                <Form id='contact-form' className="w-75">
+                <Form id='contact-form' className="w-75" onSubmit={handleSubmit}>
                     <Row className="mb-3">
                         <Col sm={12} md={6} className="mb-3 mb-md-0">
-                            <Form.Label>First Name</Form.Label>
-                            <Form.Control placeholder='First Name' />
+                            <Form.Label>{t("contacts.firstName")}</Form.Label>
+                            <Form.Control
+                                name="firstName"
+                                value={formData.firstName}
+                                onChange={handleChange}
+                                placeholder={t("contacts.firstName")}
+                            />
                         </Col>
                         <Col sm={12} md={6}>
-                            <Form.Label>Last Name</Form.Label>
-                            <Form.Control placeholder='Last Name' />
+                            <Form.Label>{t("contacts.lastName")}</Form.Label>
+                            <Form.Control
+                                name="lastName"
+                                value={formData.lastName}
+                                onChange={handleChange}
+                                placeholder={t("contacts.lastName")}
+                                />
                         </Col>
                     </Row>
 
                     <Form.Group className="mb-3">
-                        <Form.Label>Email Address</Form.Label>
-                        <Form.Control placeholder='Email' />
+                        <Form.Label>{t("contacts.email")}</Form.Label>
+                        <Form.Control
+                            name="email"
+                            type="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            placeholder={t("contacts.email")}
+                        />
                         <Form.Text className="text-muted">
-                            We keep it secret
+                            {t("contacts.email_hint")}
                         </Form.Text>
                     </Form.Group>
 
                     <Form.Group className="mb-3">
-                        <Form.Label>Phone Number</Form.Label>
-                        <Form.Control placeholder='Phone' />
+                        <Form.Label>{t("contacts.phone")}</Form.Label>
+                        <Form.Control
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleChange}
+                            placeholder={t("contacts.phone")}
+                        />
                         <Form.Text className="text-muted">
-                            We keep it safe
+                            {t("contacts.phone_hint")}
                         </Form.Text>
                     </Form.Group>
 
                     <Form.Group className="mb-3">
-                        <Form.Label>Address</Form.Label>
-                        <Form.Control placeholder='Address' />
+                        <Form.Label>{t("contacts.address")}</Form.Label>
+                        <Form.Control
+                            name="address"
+                            value={formData.address}
+                            onChange={handleChange}
+                            placeholder={t("contacts.address")}
+                        />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
-                        <Form.Label>Your Message</Form.Label>
-                        <Form.Control as='textarea' rows={3} />
+                        <Form.Label>{t("contacts.message")}</Form.Label>
+                        <Form.Control
+                            as='textarea'
+                            rows={3}
+                            name="message"
+                            value={formData.message}
+                            onChange={handleChange}
+                            placeholder={t("contacts.message")}
+                        />
                     </Form.Group>
 
                     <Button variant="danger btn-lg" type="submit">
-                        Submit
+                        {t("contacts.submit")}
                     </Button>
                 </Form>
             </div>
 
             <div className='bg-dark text-light p-5'>
                 <div className='container'>
-                    <h2 className='text-center mb-5'>Our Location</h2>
+                    <h2 className='text-center mb-5'>{t("contacts.location")}</h2>
                     <div className='row g-4'>
                         <div className='col-lg-4 d-flex flex-column align-items-center'>
                         </div>

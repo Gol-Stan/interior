@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "home": "Главная",
+    "works": "Работы",
+    "blog": "Блог",
+    "contacts": "Контакты",
+    "about": "О нас"
+  },
+  "home": {
+    "welcome": "Добро пожаловать",
+    "title": "Alcov Дизайн интерьеров",
+    "subtitle": "Здесь вы можете увидеть мои лучшие проекты интерьера",
+    "our_works": "Наши работы",
+    "contacts": "Наши контакты",
+    "about_us": "О нас",
+    "starting": "Начало этой осенью",
+    "contact_more": "Связаться для деталей",
+    "blog_latest": "Последние статьи",
+    "read_more": "Читать больше"
+  },
+  "footer": {
+    "get_in_touch": "Связаться",
+    "address": "Адрес - ул. Траян 7/2, Кишинёв",
+    "phone": "Телефон 373-000 00 000",
+    "email": "Email - alcov@intouch.io",
+    "copyright": "Авторское право @ сделал Stan"
+  },
+  "blog": {
+    "latest": "Latest on Blog",
+    "read_more": "Read More Blogs",
+    "posts": [
+      {
+        "title": "Blog 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur"
+      },
+      {
+        "title": "Blog 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur"
+      },
+      {
+        "title": "Blog 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Контакты",
+    "subtitle": "Свяжитесь с нами",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "email": "Электронная почта",
+    "email_hint": "Мы храним её в секрете",
+    "phone": "Телефон",
+    "phone_hint": "Мы храним его в безопасности",
+    "address": "Адрес",
+    "message": "Ваше сообщение",
+    "submit": "Отправить",
+    "location": "Наш адрес"
+  }
+}

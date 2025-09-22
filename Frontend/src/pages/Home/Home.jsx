@@ -8,30 +8,14 @@ import { Card } from "react-bootstrap";
 import Blog1Image from "../../utils/images/kitchen-4043098_1920.jpg";
 import Blog2Image from "../../utils/images/kitchen-2165756_1280.jpg";
 import Blog3Image from "../../utils/images/istockphoto-1837566278-612x612.webp";
+import { useTranslation } from "react-i18next";
 
-const  blogs = [
-    {
-        id:1,
-        img: Blog1Image,
-        title:"Blog 1",
-        description:"Lorem ipsum dolor sit amet, consectetur",
-    },
-    {
-        id:2,
-        img: Blog2Image,
-        title:"Blog 2",
-        description:"Lorem ipsum dolor sit amet, consectetur",
-    },
-    {
-        id:3,
-        img: Blog3Image,
-        title:"Blog 3",
-        description:"Lorem ipsum dolor sit amet, consectetur",
-    },
-
-];
 
 function Home() {
+    const { t } = useTranslation();
+    const blogs = t("blog.posts", { returnObjects: true });
+    const blogImages = [Blog1Image, Blog2Image, Blog3Image]
+
     return (
         <div className='home-page'>
             <header className='h-100 min-vh-100 d-flex align-items-center text-light'>
@@ -78,7 +62,7 @@ function Home() {
 
             <div className='blog-section text-light py-5'>
                 <div className='container d-flex flex-column align-items-center'>
-                    <h2 className='text-center text-capitalize mb-5'>Latest on Blog</h2>
+                    <h2 className='text-center text-capitalize mb-5'>{t("blog.latest")}</h2>
                     <div className='row g-4'>
                         {blogs.map((blog) => (
                          <div key={blog.id} className='col-md-6 col-lg-4'>
@@ -94,7 +78,7 @@ function Home() {
                          </div>))}
                     </div>
                     <Link to={'/blog'}>
-                        <button type='button' className='btn btn-danger btn-lg mt-5'>Read More Blogs</button>
+                        <button type='button' className='btn btn-danger btn-lg mt-5'>{t("blog.read_more")}</button>
                     </Link>
                 </div>
             </div>

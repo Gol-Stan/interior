@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "home": "Acasă",
+    "works": "Lucrări",
+    "blog": "Blog",
+    "contacts": "Contacte",
+    "about": "Despre noi"
+  },
+  "home": {
+    "welcome": "Bine ați venit",
+    "title": "Alcov Design Interior",
+    "subtitle": "Aici puteți vedea cele mai bune proiecte de design interior",
+    "our_works": "Lucrările noastre",
+    "contacts": "Contactele noastre",
+    "about_us": "Despre noi",
+    "starting": "Începând din această toamnă",
+    "contact_more": "Contactați-ne pentru detalii",
+    "blog_latest": "Ultimele articole",
+    "read_more": "Citește mai mult"
+  },
+  "footer": {
+    "get_in_touch": "Contactează-ne",
+    "address": "Adresă principală - str. Traian 7/2, Chișinău MD",
+    "phone": "Număr de telefon 373-000 00 000",
+    "email": "Email - alcov@intouch.io",
+    "copyright": "Drepturi de autor @ realizat de Stan"
+  },
+  "blog": {
+    "latest": "Latest on Blog",
+    "read_more": "Read More Blogs",
+    "posts": [
+      {
+        "title": "Blog 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur"
+      },
+      {
+        "title": "Blog 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur"
+      },
+      {
+        "title": "Blog 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Contacte",
+    "subtitle": "Luați legătura cu noi",
+    "firstName": "Prenume",
+    "lastName": "Nume",
+    "email": "Adresa de email",
+    "email_hint": "O păstrăm secretă",
+    "phone": "Număr de telefon",
+    "phone_hint": "Îl păstrăm în siguranță",
+    "address": "Adresă",
+    "message": "Mesajul dvs.",
+    "submit": "Trimiteți",
+    "location": "Locația noastră"
+  }
+}

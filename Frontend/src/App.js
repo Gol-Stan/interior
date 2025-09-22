@@ -8,8 +8,11 @@ import Works from './pages/Works/Works';
 import Blog from './pages/Blog/Blog';
 import About from './pages/About/About';
 import Contacts from './pages/Contact/Contacts';
+import {useTranslation} from "react-i18next";
 
 function App() {
+  const { i18n } = useTranslation();
+
   return (
     <div>
       <Navbar expand="lg" className='position-absolute w-100'>
@@ -44,6 +47,11 @@ function App() {
               <Nav.Link href='/about' className='text-uppercase'>About</Nav.Link>
             </Nav>
           </Navbar.Collapse>
+          <div>
+            <button onClick={() => i18n.changeLanguage('en')} className="btn btn-outline-light btn-sm me-2">EN</button>
+            <button onClick={() => i18n.changeLanguage('ru')} className="btn btn-outline-light btn-sm me-2">RU</button>
+            <button onClick={() => i18n.changeLanguage('ro')} className="btn btn-outline-light btn-sm me-2">RO</button>
+          </div>
         </Container>
       </Navbar>
 

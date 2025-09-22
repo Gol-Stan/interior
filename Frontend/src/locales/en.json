@@ -1,0 +1,61 @@
+{
+  "navbar": {
+    "home": "Home",
+    "works": "Works",
+    "blog": "Blog",
+    "contacts": "Contacts",
+    "about": "About"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "title": "Alcov Interior Design",
+    "subtitle": "Here you can see my best interior design projects",
+    "our_works": "Our Works",
+    "contacts": "Our Contacts",
+    "about_us": "About Us",
+    "starting": "Starting this Autumn",
+    "contact_more": "Contact for more info",
+    "blog_latest": "Latest on Blog",
+    "read_more": "Read More Blogs"
+  },
+  "footer": {
+    "get_in_touch": "Get in touch",
+    "address": "Main Address - Traian str. 7/2, Chisinau MD",
+    "phone": "Phone Number 373-000 00 000",
+    "email": "Email - alcov@intouch.io",
+    "copyright": "copyright @ made by Stan"
+  },
+  "blog": {
+    "latest": "Latest on Blog",
+    "read_more": "Read More Blogs",
+    "posts": [
+      {
+        "title": "Blog 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur"
+      },
+      {
+        "title": "Blog 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur"
+      },
+      {
+        "title": "Blog 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Contacts",
+    "subtitle": "Get in touch with us",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "email_hint": "We keep it secret",
+    "phone": "Phone Number",
+    "phone_hint": "We keep it safe",
+    "address": "Address",
+    "message": "Your Message",
+    "submit": "Submit",
+    "location": "Our Location"
+  }
+
+}

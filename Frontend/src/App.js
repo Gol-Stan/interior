@@ -48,9 +48,9 @@ function App() {
             </Nav>
           </Navbar.Collapse>
           <div className="d-flex ms-auto language-buttons" style={{ gap: '15px', marginRight: '20px' }}>
-            <button onClick={() => i18n.changeLanguage('en')}>EN</button>
-            <button onClick={() => i18n.changeLanguage('ru')}>RU</button>
-            <button onClick={() => i18n.changeLanguage('ro')}>RO</button>
+            <button onClick={() => { i18n.changeLanguage('en'); localStorage.setItem("language", "en"); }}>EN</button>
+            <button onClick={() => { i18n.changeLanguage('ru'); localStorage.setItem("language", "ru"); }}>RU</button>
+            <button onClick={() => { i18n.changeLanguage('ro'); localStorage.setItem("language", "ro"); }}>RO</button>
           </div>
         </Container>
       </Navbar>

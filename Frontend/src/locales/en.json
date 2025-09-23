@@ -105,5 +105,40 @@
     "study_p2": "Our team shares experience and helps you grow.",
     "contact_btn": "Contact Us",
     "clients_title": "Our Clients"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Lorem ipsum dolor sit",
+    "questions": [
+      {
+        "question": "First Question",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "question": "Second Question",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "question": "Third Question",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }
+    ]
+  },
+  "chooseSection": {
+    "title": "Why choose Alcov design",
+    "cards": [
+      {
+        "title": "2 trophies Received",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "title": "We keep our clients happy",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "title": "Always by your side",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ]
   }
 }

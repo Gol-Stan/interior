@@ -104,5 +104,40 @@
     "study_p2": "Наша команда делится опытом и помогает вам развиваться.",
     "contact_btn": "Связаться с нами",
     "clients_title": "Наши клиенты"
+  },
+  "faq": {
+    "title": "Часто задаваемые вопросы",
+    "subtitle": "Lorem ipsum dolor sit",
+    "questions": [
+      {
+        "question": "Первый вопрос",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "question": "Второй вопрос",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "question": "Третий вопрос",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }
+    ]
+  },
+  "chooseSection": {
+    "title": "Почему выбирают Alcov design",
+    "cards": [
+      {
+        "title": "Получено 2 трофея",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "title": "Мы радуем наших клиентов",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "title": "Всегда рядом с вами",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ]
   }
 }

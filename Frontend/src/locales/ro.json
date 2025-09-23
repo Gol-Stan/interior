@@ -104,5 +104,40 @@
     "study_p2": "Echipa noastră împărtășește experiența și vă ajută să evoluați.",
     "contact_btn": "Contactați-ne",
     "clients_title": "Clienții noștri"
+  },
+  "faq": {
+    "title": "Întrebări frecvente",
+    "subtitle": "Lorem ipsum dolor sit",
+    "questions": [
+      {
+        "question": "Prima întrebare",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "question": "A doua întrebare",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "question": "A treia întrebare",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }
+    ]
+  },
+  "chooseSection": {
+    "title": "De ce să alegeți Alcov design",
+    "cards": [
+      {
+        "title": "2 trofee primite",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "title": "Ne menținem clienții fericiți",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "title": "Întotdeauna alături de tine",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      }
+    ]
   }
 }

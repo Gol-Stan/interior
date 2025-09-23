@@ -16,11 +16,36 @@ header h1 {
 }
 
 .navbar .nav-link:hover, .navbar-nav {
-  color: #dc3545
+  color: #dc3545;
+  padding: 0.25rem 0.75rem;
 }
 
 nav .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.language-buttons {
+  position: absolute;
+  right: 20px; /* расстояние от правого края экрана */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 15px; /* расстояние между кнопками */
+}
+
+.language-buttons button {
+  background: none;
+  border: none;
+  color: #fff; /* белый текст, если navbar тёмный */
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.language-buttons button:hover {
+  color: #dc3545; /* цвет при наведении */
+  text-decoration: none; /* или оставить подчеркивание */
 }
 
 .scale-hover-effect {

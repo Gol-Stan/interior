@@ -1,5 +1,5 @@
 import './App.css';
-import {Link, Router, Route, Routes} from "react-router-dom";
+import {Link, Route, Routes} from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -47,10 +47,10 @@ function App() {
               <Nav.Link href='/about' className='text-uppercase'>{t('navbar.about')}</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <div>
-            <button onClick={() => i18n.changeLanguage('en')} className="btn btn-outline-light btn-sm me-2">EN</button>
-            <button onClick={() => i18n.changeLanguage('ru')} className="btn btn-outline-light btn-sm me-2">RU</button>
-            <button onClick={() => i18n.changeLanguage('ro')} className="btn btn-outline-light btn-sm me-2">RO</button>
+          <div className="d-flex ms-auto language-buttons" style={{ gap: '15px', marginRight: '20px' }}>
+            <button onClick={() => i18n.changeLanguage('en')}>EN</button>
+            <button onClick={() => i18n.changeLanguage('ru')}>RU</button>
+            <button onClick={() => i18n.changeLanguage('ro')}>RO</button>
           </div>
         </Container>
       </Navbar>
@@ -114,19 +114,19 @@ function App() {
                 <div className='col-12 col-md-6 col-lg-5 mb-5 mt-4 my-md-0'>
                   <ul className='footer-navigation list-unstyled mb-0'>
                     <Link to="/" className='text-decoration-none text-danger'>
-                      <li className='text-uppercase fw-semibold'>Home</li>
+                      <li className='text-uppercase fw-semibold'>{t('navbar.home')}</li>
                     </Link>
                     <Link to="/works" className='text-decoration-none text-danger'>
-                      <li className='text-uppercase fw-semibold'>Works</li>
+                      <li className='text-uppercase fw-semibold'>{t('navbar.works')}</li>
                     </Link>
                     <Link to="/blog" className='text-decoration-none text-danger'>
-                      <li className='text-uppercase fw-semibold'>Blog</li>
+                      <li className='text-uppercase fw-semibold'>{t('navbar.blog')}</li>
                     </Link>
                     <Link to="/contacts" className='text-decoration-none text-danger'>
-                      <li className='text-uppercase fw-semibold'>Contacts</li>
+                      <li className='text-uppercase fw-semibold'>{t('navbar.contacts')}</li>
                     </Link>
                     <Link to="/about" className='text-decoration-none text-danger'>
-                      <li className='text-uppercase fw-semibold'>About</li>
+                      <li className='text-uppercase fw-semibold'>{t('navbar.about')}</li>
                     </Link>
                   </ul>
                 </div>

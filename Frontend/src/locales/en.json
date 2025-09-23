@@ -6,18 +6,6 @@
     "contacts": "Contacts",
     "about": "About"
   },
-  "home": {
-    "welcome": "Welcome",
-    "title": "Alcov Interior Design",
-    "subtitle": "Here you can see my best interior design projects",
-    "our_works": "Our Works",
-    "contacts": "Our Contacts",
-    "about_us": "About Us",
-    "starting": "Starting this Autumn",
-    "contact_more": "Contact for more info",
-    "blog_latest": "Latest on Blog",
-    "read_more": "Read More Blogs"
-  },
   "footer": {
     "get_in_touch": "Get in touch",
     "address": "Main Address - Traian str. 7/2, Chisinau MD",
@@ -25,6 +13,38 @@
     "email": "Email - alcov@intouch.io",
     "copyright": "copyright @ made by Stan"
   },
+  "home": {
+    "welcome": "Welcome",
+    "title": "Alcov Interior Design",
+    "subtitle": "We create modern and cozy interiors for your lifestyle.",
+    "buttons": {
+      "works": "Our Works",
+      "contacts": "Our Contacts",
+      "about": "About Us"
+    },
+    "section_autumn_title": "Starting this Autumn",
+    "section_autumn_text": "We are launching new projects and design workshops.",
+    "contact_btn": "Contact for more info",
+    "blog": {
+      "latest": "Latest on Blog",
+      "read_more": "Read More Blogs",
+      "posts": [
+        {
+          "title": "Blog 1",
+          "description": "Lorem ipsum dolor sit amet, consectetur"
+        },
+        {
+          "title": "Blog 2",
+          "description": "Lorem ipsum dolor sit amet, consectetur"
+        },
+        {
+          "title": "Blog 3",
+          "description": "Lorem ipsum dolor sit amet, consectetur"
+        }
+      ]
+    }
+  },
+
   "blog": {
     "latest": "Latest Updates",
     "read_more": "Read More Blogs",

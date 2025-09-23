@@ -11,7 +11,7 @@ import Contacts from './pages/Contact/Contacts';
 import {useTranslation} from "react-i18next";
 
 function App() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   return (
     <div>
@@ -40,11 +40,11 @@ function App() {
           className='bg-light'/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto justify-content-end w-100">
-              <Nav.Link href='/' className='text-uppercase'>Home</Nav.Link>
-              <Nav.Link href='/works' className='text-uppercase'>Works</Nav.Link>
-              <Nav.Link href='/blog' className='text-uppercase'>Blog</Nav.Link>
-              <Nav.Link href='/contacts' className='text-uppercase'>Contacts</Nav.Link>
-              <Nav.Link href='/about' className='text-uppercase'>About</Nav.Link>
+              <Nav.Link href='/' className='text-uppercase'>{t('navbar.home')}</Nav.Link>
+              <Nav.Link href='/works' className='text-uppercase'>{t('navbar.works')}</Nav.Link>
+              <Nav.Link href='/blog' className='text-uppercase'>{t('navbar.blog')}</Nav.Link>
+              <Nav.Link href='/contacts' className='text-uppercase'>{t('navbar.contacts')}</Nav.Link>
+              <Nav.Link href='/about' className='text-uppercase'>{t('navbar.about')}</Nav.Link>
             </Nav>
           </Navbar.Collapse>
           <div>
@@ -68,7 +68,7 @@ function App() {
           <div className="row d-flex justify-content-between align-items-center">
             <div className='col-md-4'>
               <Link to="/contacts">
-                <button type='button' className='btn btn-outline-danger btn-lg mb-5 mb-md-4'>Get in touch</button>
+                <button type='button' className='btn btn-outline-danger btn-lg mb-5 mb-md-4'>{t('footer.get_in_touch')}</button>
               </Link>
               <ul className='footer-social-icons list-unstyled d-flex justify-content-between'>
                 <Link to="/contacts">
@@ -133,13 +133,13 @@ function App() {
                 <div className='col-12 col-md-6 col-lg-7'>
                   <ul className='list-unstyled mb-0'>
                     <li>
-                      <p>Main Address - Traian str. 7/2, Chisinau MD</p>
+                      <p>{t('footer.address')}</p>
                     </li>
                     <li>
-                      <p>Phone Number 373-000 00 000</p>
+                      <p>{t('footer.phone')}</p>
                     </li>
                     <li>
-                      <p>Email - alcov@intouch.io</p>
+                      <p>{t('footer.email')}</p>
                     </li>
                   </ul>
                 </div>

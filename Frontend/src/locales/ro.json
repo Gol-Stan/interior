@@ -6,24 +6,43 @@
     "contacts": "Contacte",
     "about": "Despre noi"
   },
-  "home": {
-    "welcome": "Bine ați venit",
-    "title": "Alcov Design Interior",
-    "subtitle": "Aici puteți vedea cele mai bune proiecte de design interior",
-    "our_works": "Lucrările noastre",
-    "contacts": "Contactele noastre",
-    "about_us": "Despre noi",
-    "starting": "Începând din această toamnă",
-    "contact_more": "Contactați-ne pentru detalii",
-    "blog_latest": "Ultimele articole",
-    "read_more": "Citește mai mult"
-  },
   "footer": {
     "get_in_touch": "Contactează-ne",
     "address": "Adresă principală - str. Traian 7/2, Chișinău MD",
     "phone": "Număr de telefon 373-000 00 000",
     "email": "Email - alcov@intouch.io",
     "copyright": "Drepturi de autor @ realizat de Stan"
+  },
+  "home": {
+    "welcome": "Bine ați venit",
+    "title": "Alcov Design Interior",
+    "subtitle": "Creăm interioare moderne și confortabile pentru stilul dvs. de viață.",
+    "buttons": {
+      "works": "Lucrările noastre",
+      "contacts": "Contactele noastre",
+      "about": "Despre noi"
+    },
+    "section_autumn_title": "Începând din această toamnă",
+    "section_autumn_text": "Lansăm noi proiecte și ateliere de design.",
+    "contact_btn": "Contactați-ne pentru detalii",
+    "blog": {
+      "latest": "Ultimele pe blog",
+      "read_more": "Citește mai multe articole",
+      "posts": [
+        {
+          "title": "Blog 1",
+          "description": "Exemplu de descriere articol"
+        },
+        {
+          "title": "Blog 2",
+          "description": "Exemplu de descriere articol"
+        },
+        {
+          "title": "Blog 3",
+          "description": "Exemplu de descriere articol"
+        }
+      ]
+    }
   },
   "blog": {
     "latest": "Latest on Blog",

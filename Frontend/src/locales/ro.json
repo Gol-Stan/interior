@@ -76,5 +76,14 @@
       { "title": "Blog3", "description": "Descriere" },
       { "title": "Blog4", "description": "Descriere" }
     ]
+  },
+  "about": {
+    "title": "Despre noi",
+    "subtitle": "Creăm interioare unice care reflectă stilul dvs. de viață.",
+    "study_title": "Studiază cu noi",
+    "study_p1": "Oferim cursuri profesionale de design interior.",
+    "study_p2": "Echipa noastră împărtășește experiența și vă ajută să evoluați.",
+    "contact_btn": "Contactați-ne",
+    "clients_title": "Clienții noștri"
   }
 }

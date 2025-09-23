@@ -76,5 +76,14 @@
       { "title": "Blog3", "description": "Lorem" },
       { "title": "Blog4", "description": "Lorem" }
     ]
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "We create unique interior designs that reflect your lifestyle.",
+    "study_title": "Study with Us",
+    "study_p1": "We provide professional interior design training.",
+    "study_p2": "Our team shares experience and helps you grow.",
+    "contact_btn": "Contact Us",
+    "clients_title": "Our Clients"
   }
 }

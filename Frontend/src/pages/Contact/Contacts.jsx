@@ -23,10 +23,12 @@ function Contacts() {
             ...formData, [i.target.name]: i.target.value });
     };
 
+    const API_URL = process.env.REACT_APP_API_URL;
+
     const handleSubmit = async (i) => {
         i.preventDefault();
         try {
-            const response = await fetch("api/contact/send", {
+            const response = await fetch("${API_URL}/contact/send", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(formData),

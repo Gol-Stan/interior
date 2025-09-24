@@ -1,0 +1,39 @@
+
+services:
+  backend:
+    build: ./Backend
+    container_name: backend
+    env_file: ./Backend/.env
+    volumes:
+      - ./Backend:/app
+    ports:
+      - "8000:8000"
+    networks:
+      - app-net
+
+  frontend:
+    build: ./Frontend
+    container_name: frontend
+    volumes:
+      - ./Frontend:/app
+    ports:
+      - "3000:3000"
+    networks:
+      - app-net
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge

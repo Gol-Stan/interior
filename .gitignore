@@ -25,6 +25,15 @@ Backend/app/__pycache__/
 Backend/app/routers/__pycache__/
 Backend/app/schemas/__pycache__/
 Backend/app/.env
+venv/
+__pycache__/
+*.pyc
+.env
+app/__pycache__/
+app/routers/__pycache__/
+app/schemas/__pycache__/
+app/.env
+
 
 # Общие
 .DS_Store

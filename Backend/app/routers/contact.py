@@ -6,7 +6,7 @@ import smtplib
 from email.mime.text import MIMEText
 import traceback
 
-router = APIRouter(prefix="/contact")
+router = APIRouter()
 
 def send_email(contact: ContactForm):
     try:
@@ -24,7 +24,7 @@ def send_email(contact: ContactForm):
         msg['From'] = EMAIL_USER
         msg['To'] = EMAIL_RECEIVER
 
-        # Отправка через Gmail
+
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
             server.login(EMAIL_USER, EMAIL_PASS)
             server.send_message(msg)

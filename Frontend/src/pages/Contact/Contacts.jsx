@@ -10,10 +10,11 @@ function Contacts() {
     const { t } = useTranslation();
 
     const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
+        first_name: '',
+        last_name: '',
         email: '',
         phone: '',
+        address: '',
         message: '',
     });
 
@@ -25,19 +26,20 @@ function Contacts() {
     const handleSubmit = async (i) => {
         i.preventDefault();
         try {
-            const response = await fetch("http://localhost:8000/contacts/", {
+            const response = await fetch("http://localhost:8000/contact/send", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(formData),
             });
             if (response.ok) {
-                alert(t("contact.succes", "Message sent successfully!"));
+                alert(t("contacts.succes", "Message sent successfully!"));
                 setFormData({
-                firstName: "",
-                lastName: "",
-                email: "",
-                phone: "",
-                message: "",
+                    first_name: '',
+                    last_name: '',
+                    email: '',
+                    phone: '',
+                    address: '',
+                    message: '',
                  });
             } else {
                 alert(t("contacts.error", "Error occurred!"));
@@ -61,21 +63,21 @@ function Contacts() {
                 <Form id='contact-form' className="w-75" onSubmit={handleSubmit}>
                     <Row className="mb-3">
                         <Col sm={12} md={6} className="mb-3 mb-md-0">
-                            <Form.Label>{t("contacts.firstName")}</Form.Label>
+                            <Form.Label>{t("contacts.first_name")}</Form.Label>
                             <Form.Control
-                                name="firstName"
-                                value={formData.firstName}
+                                name="first_name"
+                                value={formData.first_name}
                                 onChange={handleChange}
-                                placeholder={t("contacts.firstName")}
+                                placeholder={t("contacts.first_name")}
                             />
                         </Col>
                         <Col sm={12} md={6}>
-                            <Form.Label>{t("contacts.lastName")}</Form.Label>
+                            <Form.Label>{t("contacts.last_name")}</Form.Label>
                             <Form.Control
-                                name="lastName"
-                                value={formData.lastName}
+                                name="last_name"
+                                value={formData.last_name}
                                 onChange={handleChange}
-                                placeholder={t("contacts.lastName")}
+                                placeholder={t("contacts.last_name")}
                                 />
                         </Col>
                     </Row>

@@ -65,8 +65,8 @@
   "contacts": {
     "title": "Контакты",
     "subtitle": "Свяжитесь с нами",
-    "firstName": "Имя",
-    "lastName": "Фамилия",
+    "first_name": "Имя",
+    "last_name": "Фамилия",
     "email": "Электронная почта",
     "email_hint": "Мы храним её в секрете",
     "phone": "Телефон",

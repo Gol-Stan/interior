@@ -65,8 +65,8 @@
   "contacts": {
     "title": "Contacte",
     "subtitle": "Luați legătura cu noi",
-    "firstName": "Prenume",
-    "lastName": "Nume",
+    "first_name": "Prenume",
+    "last_name": "Nume",
     "email": "Adresa de email",
     "email_hint": "O păstrăm secretă",
     "phone": "Număr de telefon",

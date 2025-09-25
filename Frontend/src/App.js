@@ -40,11 +40,21 @@ function App() {
           className='bg-light'/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto justify-content-end w-100">
-              <Nav.Link href='/' className='text-uppercase'>{t('navbar.home')}</Nav.Link>
-              <Nav.Link href='/works' className='text-uppercase'>{t('navbar.works')}</Nav.Link>
-              <Nav.Link href='/blog' className='text-uppercase'>{t('navbar.blog')}</Nav.Link>
-              <Nav.Link href='/contacts' className='text-uppercase'>{t('navbar.contacts')}</Nav.Link>
-              <Nav.Link href='/about' className='text-uppercase'>{t('navbar.about')}</Nav.Link>
+              <Nav.Link as={Link} to="/" className="text-uppercase">
+                {t('navbar.home')}
+              </Nav.Link>
+              <Nav.Link as={Link} to="/works" className="text-uppercase">
+                {t('navbar.works')}
+              </Nav.Link>
+              <Nav.Link as={Link} to="/blog" className="text-uppercase">
+                {t('navbar.blog')}
+              </Nav.Link>
+              <Nav.Link as={Link} to="/contacts" className="text-uppercase">
+                {t('navbar.contacts')}
+              </Nav.Link>
+              <Nav.Link as={Link} to="/about" className="text-uppercase">
+                {t('navbar.about')}
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
           <div className="d-flex ms-auto language-buttons" style={{ gap: '15px', marginRight: '20px' }}>
